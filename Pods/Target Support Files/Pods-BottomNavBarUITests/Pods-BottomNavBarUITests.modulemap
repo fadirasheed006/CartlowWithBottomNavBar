@@ -1,0 +1,6 @@
+framework module Pods_BottomNavBarUITests {
+  umbrella header "Pods-BottomNavBarUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
