@@ -1,15 +1,15 @@
 //
-//  BestDealsCell.swift
-//  CartlowUIDesign
+//  BoxingCell.swift
+//  BottomNavBar
 //
-//  Created by macbook on 14/09/2020.
+//  Created by macbook on 21/09/2020.
 //  Copyright © 2020 macbook. All rights reserved.
 //
 
 import UIKit
 import Kingfisher
-class BestDealsCell: UICollectionViewCell {
-  // var items = [Items]()
+class BoxingCell: UICollectionViewCell {
+    
     @IBOutlet weak var img: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -19,12 +19,12 @@ class BestDealsCell: UICollectionViewCell {
         img.layer.borderWidth = 0.5
         img.layer.borderColor = UIColor.gray.cgColor
     }
-    
-    func setUi(sec:Items){
-    
+    func setUi(cat:Category){
+        
         img.kf.indicatorType = .activity
-        img.kf.setImage(with: URL(string:sec.image! ), placeholder: nil, options:[.transition(.fade(0.7))], progressBlock: nil)
-}
-   
-    
+        img.kf.setImage(with: URL(string: cat.icon!), placeholder: nil, options:[.transition(.fade(0.7))], progressBlock: nil)
+        
+        
+        
+    }
 }

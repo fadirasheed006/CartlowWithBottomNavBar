@@ -9,6 +9,9 @@
 import UIKit
 class ViewController: UIViewController {
 
+    @IBOutlet weak var BoxingCollectionView: UICollectionView!
+    @IBOutlet weak var BrandCollectionView: UICollectionView!
+    @IBOutlet weak var SecondBanner: UICollectionView!
     @IBOutlet weak var IphoneCollection: UICollectionView!
     @IBOutlet weak var BestDealsCollection: UICollectionView!
     @IBOutlet weak var categoryCollection: UICollectionView!
@@ -40,10 +43,13 @@ class ViewController: UIViewController {
                 // reload data from api and set to collection
                 DispatchQueue.main.async {
                     self.categoryCollection.reloadData()
-                   self.BestDealsCollection.reloadData()
-                   self.IphoneCollection.reloadData()
- 
-                      self.BannerCollection.reloadData()
+                    self.BestDealsCollection.reloadData()
+                    self.IphoneCollection.reloadData()
+                    self.BannerCollection.reloadData()
+                    self.SecondBanner.reloadData()
+                    self.BrandCollectionView.reloadData()
+                    self.BoxingCollectionView.reloadData()
+
                     
                     self.timer = Timer.scheduledTimer(timeInterval: 1.5, target: self, selector: #selector(self.changeImage), userInfo: nil, repeats: true)
                     
@@ -93,11 +99,24 @@ extension ViewController:       UICollectionViewDelegate,UICollectionViewDataSou
             return sections.count
 
         }
+        
       else if collectionView == IphoneCollection{
 
             return sections.count
         }
-      
+      else if collectionView == SecondBanner{
+        
+        return banners.count
+      }
+      else if collectionView == BrandCollectionView{
+        
+        return categories.count
+        
+      }else if collectionView == BoxingCollectionView{
+        
+        return categories.count
+        
+      }
         else {
             print(banners.count)
             pageView.numberOfPages = banners.count
@@ -132,7 +151,36 @@ extension ViewController:       UICollectionViewDelegate,UICollectionViewDataSou
 
             return cell
 
+   } else if collectionView == SecondBanner {
+    
+    
+        let cell = SecondBanner.dequeueReusableCell(withReuseIdentifier: "SecondBanner", for: indexPath)
+        if let bannerVC = cell.viewWithTag(13) as? SecondBannerCell{
+            
+            
+            bannerVC.setUi(ban: banners[indexPath.row])
+            
         }
+        
+        return cell
+        
+   }else if collectionView == BrandCollectionView {
+    let cell = BrandCollectionView.dequeueReusableCell(withReuseIdentifier: "brands", for: indexPath) as! BrandsCell
+    cell.setUi(cat: categories[indexPath.row])
+    
+    return cell
+    
+    
+   }
+   else if collectionView == BoxingCollectionView {
+    let cell = BoxingCollectionView.dequeueReusableCell(withReuseIdentifier: "boxing", for: indexPath) as! BoxingCell
+    cell.setUi(cat: categories[indexPath.row])
+    
+    return cell
+    
+    
+   }
+   
         else
         {
             let cell = BannerCollection.dequeueReusableCell(withReuseIdentifier: "banner", for: indexPath)
@@ -146,8 +194,8 @@ extension ViewController:       UICollectionViewDelegate,UICollectionViewDataSou
             return cell
 
         }
-    }
     
+}
     //    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
     //        if collectionView == BestDealsCollection {
     //            let width = view.bounds.width

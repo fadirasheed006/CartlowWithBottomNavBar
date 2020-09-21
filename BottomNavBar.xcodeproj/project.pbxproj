@@ -31,6 +31,9 @@
 		FA800D652518BD580030AC00 /* BestDealsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA800D612518BD580030AC00 /* BestDealsCell.swift */; };
 		FA800D662518BD580030AC00 /* BannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA800D622518BD580030AC00 /* BannerCell.swift */; };
 		FA800D672518BD580030AC00 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA800D632518BD580030AC00 /* CategoryCell.swift */; };
+		FA800D692518E3600030AC00 /* SecondBannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA800D682518E3600030AC00 /* SecondBannerCell.swift */; };
+		FA800D6B2518E8F10030AC00 /* BrandsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA800D6A2518E8F10030AC00 /* BrandsCell.swift */; };
+		FA800D6D2518F8C10030AC00 /* BoxingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA800D6C2518F8C10030AC00 /* BoxingCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +89,9 @@
 		FA800D612518BD580030AC00 /* BestDealsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BestDealsCell.swift; sourceTree = "<group>"; };
 		FA800D622518BD580030AC00 /* BannerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannerCell.swift; sourceTree = "<group>"; };
 		FA800D632518BD580030AC00 /* CategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		FA800D682518E3600030AC00 /* SecondBannerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondBannerCell.swift; sourceTree = "<group>"; };
+		FA800D6A2518E8F10030AC00 /* BrandsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandsCell.swift; sourceTree = "<group>"; };
+		FA800D6C2518F8C10030AC00 /* BoxingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxingCell.swift; sourceTree = "<group>"; };
 		FC7E324F056FD1BEA0203F9F /* Pods_BottomNavBarUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BottomNavBarUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -195,6 +201,9 @@
 				FA800D612518BD580030AC00 /* BestDealsCell.swift */,
 				FA800D632518BD580030AC00 /* CategoryCell.swift */,
 				FA800D602518BD580030AC00 /* IphoneCell.swift */,
+				FA800D682518E3600030AC00 /* SecondBannerCell.swift */,
+				FA800D6A2518E8F10030AC00 /* BrandsCell.swift */,
+				FA800D6C2518F8C10030AC00 /* BoxingCell.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -458,9 +467,12 @@
 				FA800D582518BD2A0030AC00 /* Daily_deals.swift in Sources */,
 				FA800D5A2518BD2A0030AC00 /* Banner.swift in Sources */,
 				FA800D572518BD2A0030AC00 /* Sections.swift in Sources */,
+				FA800D6D2518F8C10030AC00 /* BoxingCell.swift in Sources */,
+				FA800D6B2518E8F10030AC00 /* BrandsCell.swift in Sources */,
 				FA800D652518BD580030AC00 /* BestDealsCell.swift in Sources */,
 				FA800D562518BD2A0030AC00 /* HomeResponse.swift in Sources */,
 				FA800D5F2518BD430030AC00 /* HomeResponseApi.swift in Sources */,
+				FA800D692518E3600030AC00 /* SecondBannerCell.swift in Sources */,
 				FA800D592518BD2A0030AC00 /* Subcategory.swift in Sources */,
 				FA800D642518BD580030AC00 /* IphoneCell.swift in Sources */,
 				FA800D5B2518BD2A0030AC00 /* Items.swift in Sources */,
