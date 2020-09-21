@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var categoryCollection: UICollectionView!
+    @IBOutlet weak var pageView: UIPageControl!
     override func viewDidLoad() {
         super.viewDidLoad()
       //view.backgroundColor = .green
