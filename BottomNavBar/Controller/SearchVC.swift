@@ -16,11 +16,12 @@ class SearchVC: UIViewController {
     @IBOutlet weak var searchCollection: UICollectionView!
     override func viewDidLoad() {
         
-        let width = (view.frame.size.width - 10) / 2
-        
-        let layout = searchCollection.collectionViewLayout as! UICollectionViewFlowLayout
-        layout.itemSize = CGSize(width: width, height: width) 
-        
+//        let width = (view.frame.size.width - 5) / 2
+//
+//
+//        let layout = searchCollection.collectionViewLayout as! UICollectionViewFlowLayout
+//        layout.itemSize = CGSize (width:width, height: width)
+//
         super.viewDidLoad()
         homeApi.getHomeResponse { (homeData) in
             if let homeData = homeData {
