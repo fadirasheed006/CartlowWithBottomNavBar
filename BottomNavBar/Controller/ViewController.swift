@@ -8,7 +8,8 @@
 
 import UIKit
 class ViewController: UIViewController {
-
+    @IBOutlet weak var searchBar: UISearchBar!
+    
     @IBOutlet weak var BoxingCollectionView: UICollectionView!
     @IBOutlet weak var BrandCollectionView: UICollectionView!
     @IBOutlet weak var SecondBanner: UICollectionView!
@@ -30,7 +31,6 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         
         pageView.currentPage   = 0
         
@@ -206,7 +206,25 @@ extension ViewController:       UICollectionViewDelegate,UICollectionViewDataSou
       }
     
     
-    
+extension ViewController:UISearchBarDelegate {
+//    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+//
+//        if let text = searchBar.text {
+//            // here is text from the search bar
+//            print(text)
+//
+//            // now you can call 'performSegue'
+//            performSegue(withIdentifier: "searchbar", sender: self)
+//        }
+//    }
+    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+        
+        performSegue(withIdentifier: "searchbar", sender: self)
+        
+        
+        
+    }
+}
 
 
 

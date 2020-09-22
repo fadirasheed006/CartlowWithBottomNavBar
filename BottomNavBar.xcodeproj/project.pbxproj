@@ -34,6 +34,8 @@
 		FA800D692518E3600030AC00 /* SecondBannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA800D682518E3600030AC00 /* SecondBannerCell.swift */; };
 		FA800D6B2518E8F10030AC00 /* BrandsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA800D6A2518E8F10030AC00 /* BrandsCell.swift */; };
 		FA800D6D2518F8C10030AC00 /* BoxingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA800D6C2518F8C10030AC00 /* BoxingCell.swift */; };
+		FAACD17C2519CD0B003C9EE0 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAACD17B2519CD0B003C9EE0 /* SearchVC.swift */; };
+		FAACD17E2519D54D003C9EE0 /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAACD17D2519D54D003C9EE0 /* SearchCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +94,8 @@
 		FA800D682518E3600030AC00 /* SecondBannerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondBannerCell.swift; sourceTree = "<group>"; };
 		FA800D6A2518E8F10030AC00 /* BrandsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandsCell.swift; sourceTree = "<group>"; };
 		FA800D6C2518F8C10030AC00 /* BoxingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxingCell.swift; sourceTree = "<group>"; };
+		FAACD17B2519CD0B003C9EE0 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		FAACD17D2519D54D003C9EE0 /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
 		FC7E324F056FD1BEA0203F9F /* Pods_BottomNavBarUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BottomNavBarUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -161,12 +165,12 @@
 		FA375C332511E69E009B0E65 /* BottomNavBar */ = {
 			isa = PBXGroup;
 			children = (
+				FAACD17A2519CCDC003C9EE0 /* Controller */,
 				FA800D4D2518BC100030AC00 /* Services */,
 				FA800D4C2518BC010030AC00 /* Constants */,
 				FA800D4B2518BBF30030AC00 /* Model */,
 				FA800D4A2518BBE10030AC00 /* view */,
 				FA375C342511E69E009B0E65 /* AppDelegate.swift */,
-				FA375C362511E69E009B0E65 /* ViewController.swift */,
 				FA375C382511E69E009B0E65 /* Main.storyboard */,
 				FA375C3E2511E69F009B0E65 /* Assets.xcassets */,
 				FA375C402511E69F009B0E65 /* LaunchScreen.storyboard */,
@@ -204,6 +208,7 @@
 				FA800D682518E3600030AC00 /* SecondBannerCell.swift */,
 				FA800D6A2518E8F10030AC00 /* BrandsCell.swift */,
 				FA800D6C2518F8C10030AC00 /* BoxingCell.swift */,
+				FAACD17D2519D54D003C9EE0 /* SearchCell.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -236,6 +241,15 @@
 				FA800D5E2518BD430030AC00 /* HomeResponseApi.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		FAACD17A2519CCDC003C9EE0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FA375C362511E69E009B0E65 /* ViewController.swift */,
+				FAACD17B2519CD0B003C9EE0 /* SearchVC.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		FC54B4F098F778999E7EF52D /* Frameworks */ = {
@@ -472,12 +486,14 @@
 				FA800D652518BD580030AC00 /* BestDealsCell.swift in Sources */,
 				FA800D562518BD2A0030AC00 /* HomeResponse.swift in Sources */,
 				FA800D5F2518BD430030AC00 /* HomeResponseApi.swift in Sources */,
+				FAACD17E2519D54D003C9EE0 /* SearchCell.swift in Sources */,
 				FA800D692518E3600030AC00 /* SecondBannerCell.swift in Sources */,
 				FA800D592518BD2A0030AC00 /* Subcategory.swift in Sources */,
 				FA800D642518BD580030AC00 /* IphoneCell.swift in Sources */,
 				FA800D5B2518BD2A0030AC00 /* Items.swift in Sources */,
 				FA800D672518BD580030AC00 /* CategoryCell.swift in Sources */,
 				FA800D662518BD580030AC00 /* BannerCell.swift in Sources */,
+				FAACD17C2519CD0B003C9EE0 /* SearchVC.swift in Sources */,
 				FA375C352511E69E009B0E65 /* AppDelegate.swift in Sources */,
 				FA375C3D2511E69E009B0E65 /* BottomNavBar.xcdatamodeld in Sources */,
 				FA800D552518BD2A0030AC00 /* Category.swift in Sources */,
